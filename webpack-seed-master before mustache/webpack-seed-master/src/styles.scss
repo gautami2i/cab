@@ -1,0 +1,87 @@
+@import "variable";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import "home";
+
+@mixin formOutLine() {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: $shadow;
+  justify-content: center;
+  margin: 1rem;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+body {
+  background-color: $bodyColor;
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+#container {
+  height: auto;
+  width: 100%;
+  #section1{
+   display: flex;
+    justify-content: center;
+  }
+  .header {
+    text-align: center;
+    background-color: #434242;
+    line-height: 2rem;
+    color: white;
+    
+    .logo{
+      width: 8.8rem;
+      height: auto;
+      position: absolute;
+      left: 0.5rem;
+    }
+    h1 {
+      margin: 0px;
+    }
+  }
+  }
+  .midContainer {
+    display: flex;
+    justify-content: center;
+    #signInform {
+      @include formOutLine();
+      padding: 1rem 0;
+  }
+}
+#signUpForm {
+
+  @include formOutLine();
+}
+
+input.inputBox {
+  margin: 1rem 0;
+  border: none;
+  box-shadow: $shadow;
+  border-radius: 0.5rem;
+  height: 2rem;
+  width: 100%
+}
+
+.fieldName {
+  width: 7.5rem;
+  display: inline-block;
+}
+
+.btn {
+  text-align: center;
+  width: 60%;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #0014ff;
+  color: white;
+}
+.submit {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}

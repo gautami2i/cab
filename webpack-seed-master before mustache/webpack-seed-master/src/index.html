@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div id="container">
+      <div class="header">
+        <img class = "logo" src="assets/cablogo.png">
+        <h1>WELCOME TO HELLOCABS</h1>
+        <span>Log In drive In </span>
+      </div>
+
+      <div class="midContainer">
+        <div id="signInform">
+            <form>
+            <h2 class="primaryFont" style="border-bottom:1px solid grey ; padding-bottom: 5px;">LOGIN</h2>
+            
+              <input
+                type="tel"
+                id="number"
+                class="inputBox"
+                maxlength="10"
+                placeholder="Enter phone number"
+                onblur="numberValidation('number')"
+                title="Enter 10 digit number"
+                required
+              />
+              <br />
+         
+              <input
+                type="password"
+                name="name"
+                id="pass"
+                class="inputBox"
+                placeholder="Password"
+                required
+              />
+              <br>
+              <div class="submit">
+                <button type="submit" class = "btn">LOG IN</button>
+              </div>
+              <span>Not a existing user</span>
+              <a href="signUp.html">Create account</a>
+            </div>  
+               
+            </form>
+         </div>
+        </div>
+      </div>
+      <script src=""></script>
+</body>
+</html>

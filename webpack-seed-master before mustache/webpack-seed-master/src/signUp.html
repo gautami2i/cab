@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="section1">
+        <div id="signUpForm">
+          <form>
+            <h2>Create Your Account</h2>
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              class="inputBox"
+              placeholder="FirstName"
+              onblur="nameValidation('firstName')"
+              required
+            />
+            <br />
+
+            <input
+              type="text"
+              name="name"
+              id="lastName"
+              class="inputBox"
+              placeholder="LastName"
+              onblur="nameValidation('lastName')"
+              required
+            />
+            <br />
+
+            <!--Contact details-->
+
+            <input
+              type="tel"
+              id="number"
+              class="inputBox"
+              maxlength="10"
+              placeholder="MobileNumber"
+              onblur="numberValidation('number')"
+              title="Enter 10 digit number"
+              required
+            />
+            <br />
+
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="inputBox"
+              placeholder="Email"
+              required
+            />
+            <br />
+
+            <input
+              type="password"
+              name="name"
+              id="pass"
+              class="inputBox"
+              placeholder="Password"
+              required
+            />
+            <br />
+
+            <div class="submit">
+              <button type="submit" class="btn">SIGN UP</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src=""></script>
+  </body>
+</html>

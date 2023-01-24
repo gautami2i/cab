@@ -1,0 +1,31 @@
+@import "variable";
+body {
+    margin: 0;
+    background-color: $bodyColor;
+    font-family: "Roboto", sans-serif;
+}
+
+.headerNav{
+    display: flex;
+    justify-content: space-between;
+    background-color: $headerBg;
+    color: $headerFontColor;
+    align-items: center;
+    .leftNav {
+      .navLogo{
+          width: 6rem;
+          height: 3rem;
+      }  
+    }
+    .centerNav{
+        display: flex;
+        justify-content: center;
+        .menu{
+            margin-left: 2.5rem;
+        }
+    }
+    .rightNav{
+        margin-right: 1rem;
+    }
+
+}
